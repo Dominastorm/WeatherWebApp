@@ -61,6 +61,7 @@ public class WeatherAPI {
         List<Weather> forecast = new ArrayList<>();
         for (JsonNode node : root.get("list")) {
             Weather weather = new Weather();
+            weather.setCity(city);
             weather.setDate(node.get("dt_txt").asText());
             weather.setTemperature(node.get("main").get("temp").asDouble());
             weather.setHumidity(node.get("main").get("humidity").asInt());
