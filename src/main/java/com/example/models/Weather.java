@@ -9,6 +9,14 @@ public class Weather {
     private double maxTemperature;
     private double pressure;
     private double humidity;
+    private String date;
+    
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	public String getCity() {
 		return city;
 	}
