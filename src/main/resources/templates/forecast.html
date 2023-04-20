@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <title>Weather App</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #F9F9F9;
+            font-family: "Open Sans", sans-serif;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            font-weight: bold;
+            background-color: #F5F5F5;
+        }
+        tr:nth-child(even) {
+            background-color: #F9F9F9;
+        }
+    </style>
 </head>
 <body>
     <h1>Weather App</h1>
@@ -24,7 +59,6 @@
             <td th:text="${forecast.description}"></td>
         </tr>
     </tbody>
-</table>
-    
+    </table>
 </body>
 </html>
