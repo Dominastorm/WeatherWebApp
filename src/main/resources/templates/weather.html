@@ -4,15 +4,60 @@
     <meta charset="UTF-8">
     <title>Weather for [[${weather.city}]]</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #F9F9F9;
+            font-family: "Open Sans", sans-serif;
+            color: #333;
+        }
+        div.outside {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            justify-self: unset;
+        }
+        div.inside {
+            margin: 0 auto;
+            max-width: 250px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        p:first-child {
+            margin-top: 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Weather for [[${weather.city}]]</h1>
-    <p>Description: [[${weather.description}]]</p>
-    <p>Temperature: [[${weather.temperature}]] &deg;C</p>
-    <p>Feels like: [[${weather.feelsLike}]] &deg;C</p>
-    <p>Min temperature: [[${weather.minTemperature}]] &deg;C</p>
-    <p>Max temperature: [[${weather.maxTemperature}]] &deg;C</p>
-    <p>Pressure: [[${weather.pressure}]] hPa</p>
-    <p>Humidity: [[${weather.humidity}]]%</p>
+    <div class="outside">
+        <h1>Weather for [[${weather.city}]]</h1>
+        <div class="inside">
+            <p><strong>Description:</strong> [[${weather.description}]]</p>
+            <p><strong>Temperature:</strong> [[${weather.temperature}]] &deg;C</p>
+            <p><strong>Feels like:</strong> [[${weather.feelsLike}]] &deg;C</p>
+            <p><strong>Min temperature:</strong> [[${weather.minTemperature}]] &deg;C</p>
+            <p><strong>Max temperature:</strong> [[${weather.maxTemperature}]] &deg;C</p>
+            <p><strong>Pressure:</strong> [[${weather.pressure}]] hPa</p>
+            <p><strong>Humidity:</strong> [[${weather.humidity}]]%</p>
+        </div>
+    </div>
 </body>
 </html>
