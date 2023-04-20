@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather for [[${weather.city}]]</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Weather for [[${weather.city}]]</h1>
+    <p>Description: [[${weather.description}]]</p>
+    <p>Temperature: [[${weather.temperature}]] &deg;C</p>
+    <p>Feels like: [[${weather.feelsLike}]] &deg;C</p>
+    <p>Min temperature: [[${weather.minTemperature}]] &deg;C</p>
+    <p>Max temperature: [[${weather.maxTemperature}]] &deg;C</p>
+    <p>Pressure: [[${weather.pressure}]] hPa</p>
+    <p>Humidity: [[${weather.humidity}]]%</p>
+</body>
+</html>
