@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            color: #2e2e2e;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2e2e2e;
+            margin-bottom: 10px;
+        }
+        input {
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2e2e2e;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #4d4d4d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Signup</h1>
+    <form method="post" action="/signup">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Signup</button>
+    </form>
+</body>
+</html>
