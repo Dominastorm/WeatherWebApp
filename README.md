@@ -5,7 +5,7 @@
       <h2>Pages</h2>
       <p>The application has three main pages:</p>
       <h3>1. Home Page</h3>
-      <p>The Home page prScreenshot from 2023-04-20 11-19-15ovides users with a form to enter the city name they want to retrieve weather information for. The page also contains two buttons for the user to either retrieve current weather information or forecast for the given city.</p>
+      <p>The Home page provides users with a form to enter the city name they want to retrieve weather information for. The page also contains two buttons for the user to either retrieve current weather information or forecast for the given city.</p>
       <p><img src="screenshots/home-page.png" alt="home-page-screenshot"></p>
       <h3>2. Weather Page</h3>
       <p>The Weather page displays the current weather information for the city entered by the user on the Home page. The page includes weather details such as temperature, wind speed, humidity, and pressure.</p>
