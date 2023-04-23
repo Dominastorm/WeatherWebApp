@@ -3,14 +3,17 @@
       <h1>Java Weather Web App Project</h1>
       <p>This project is a simple weather web application built using Spring Boot framework. The application provides users with the ability to retrieve weather information and forecast for a given city.</p>
       <h2>Pages</h2>
-      <p>The application has three main pages:</p>
-      <h3>1. Home Page</h3>
+      <p>The application has five main pages:</p>
+      <h3>1. Signup/Login Pages</h3>
+      <p>The Signup/Login pages allow the user to create their account and login to access their weather dashboard.</p>
+      <p><img src="screenshots/login-page.png" alt="login-page-screenshot"></p>
+      <h3>2. Home Page</h3>
       <p>The Home page provides users with a form to enter the city name they want to retrieve weather information for. The page also contains two buttons for the user to either retrieve current weather information or forecast for the given city.</p>
       <p><img src="screenshots/home-page.png" alt="home-page-screenshot"></p>
-      <h3>2. Weather Page</h3>
+      <h3>3. Weather Page</h3>
       <p>The Weather page displays the current weather information for the city entered by the user on the Home page. The page includes weather details such as temperature, wind speed, humidity, and pressure.</p>
       <p><img src="screenshots/weather-page.png" alt="weather-page-screenshot"></p>
-      <h3>3. Forecast Page</h3>
+      <h3>4. Forecast Page</h3>
       <p>The Forecast page displays the weather forecast for the next five days for the city entered by the user on the Home page. The page includes weather details such as temperature, wind speed, humidity, and pressure.</p>
       <p><img src="screenshots/forecast-page.png" alt="forecast-page-screenshot"></p>
       <h2>Requirements</h2>
