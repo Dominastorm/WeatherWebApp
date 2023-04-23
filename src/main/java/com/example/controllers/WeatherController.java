@@ -31,7 +31,7 @@ public class WeatherController {
     
     @Autowired
     public WeatherController() throws SQLException {
-        this.userService = new UserServiceImpl();
+        this.userService = UserServiceImpl.createUserServiceImpl();
     }
 
     @GetMapping("/signup")
