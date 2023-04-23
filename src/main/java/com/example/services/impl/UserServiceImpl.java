@@ -8,9 +8,13 @@ import com.example.services.UserService;
 import java.sql.SQLException;
 
 public class UserServiceImpl implements UserService {
-    private final UserRepository userRepository;
+    public static UserServiceImpl createUserServiceImpl() throws SQLException {
+		return new UserServiceImpl();
+	}
 
-    public UserServiceImpl() throws SQLException {
+	private final UserRepository userRepository;
+
+    private UserServiceImpl() throws SQLException {
         this.userRepository = new UserRepositoryMySQL();
     }
 
